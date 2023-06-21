@@ -16,6 +16,14 @@
   flex-grow: 1;
 }
 
+.fz-12px {
+  font-size: 12px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -88,6 +96,17 @@ strong {
   width: 30vw;
 }
 
+.login {
+  padding: 7px 20px;
+  gap: 8px;
+  width: 120px;
+  height: 30px;
+}
+
+.divider {
+  width: 80vw;
+  height: 6px;
+}
 /* main content */
 
 hr.solid {
