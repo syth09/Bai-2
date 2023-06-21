@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Freelancer Technician Registration Page</title>
+  </head>
+
+  <body>
+    <main class="flex">
+      <div>
+        <img
+          src="images/worker splash.png"
+          class="splash-img"
+          alt="Freelancer splash art"
+        />
+      </div>
+      <div class="flex-grow">
+        <div class="flex justify-between items-center py-24px px-80px">
+          <img src="images/bee.png" class="logo" alt="logo" />
+          <div class="flex">
+            <p>Bạn đã có tài khoản?</p>
+            <button
+              class="ml-16px btn-white"
+              type="button"
+              onclick="alert('How ya doing Dawg')"
+            >
+              Đăng Nhập
+            </button>
+          </div>
+        </div>
+        <form action=" " class="px-80px">
+          <h1 class="mb">Đăng ký Kỹ thuật viên</h1>
+          <div>
+            <!---- Thông tin cá nhân cơ bản ---->
+            <div>
+              <p class="mb-24px">Thông tin cá nhân</p>
+
+              <div class="flex mb-24px">
+                <div class="form-group pr-12px mr-16px">
+                  <label class="form-label" for="full-name"
+                    ><strong>*</strong> Họ và Tên</label
+                  >
+                  <input
+                    id="full-name"
+                    class="form-input"
+                    type="text"
+                    name="name-label"
+                    required
+                    placeholder="Nhập tên"
+                  />
+                </div>
+
+                <div class="form-group pl-12px mr-16px ml-16px">
+                  <label class="form-label" for="birth-date"
+                    ><strong>*</strong> Ngày sinh</label
+                  >
+                  <input
+                    id="birth-date"
+                    class="form-input"
+                    type="date"
+                    name="dob-label"
+                    required
+                  />
+                </div>
+
+                <div class="form-group pl-12px ml-16px">
+                  <label class="form-label" for="phone"
+                    ><strong>*</strong> Số điện thoại</label
+                  >
+                  <div
+                    class="flex justify-between items-center border-0.5px border-1d192d border-solid rounded-4px"
+                  >
+                    <div
+                      class="flex items-center py-14px px-16px border-r-0.5px border-0 border-solid border-1d192d"
+                    >
+                      <img
+                        src="images/Vietnam flag.png"
+                        alt="vietnam"
+                        class="Vietnam flag inline"
+                      />
+
+                      <span>+84|</span>
+                    </div>
+                    <input
+                      id="phone"
+                      class="form-input border-0"
+                      type="tel"
+                      name="phone-label"
+                      required
+                      placeholder="Nhập số điện thoại"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex mb-24px">
+                <div class="form-group pr-12px mr-16px">
+                  <label class="form-label" for="email"
+                    ><strong>*</strong> Email</label
+                  >
+                  <input
+                    id="email"
+                    class="form-input"
+                    type="email"
+                    name="email-label"
+                    required
+                    placeholder="Nhập email"
+                  />
+                </div>
+
+                <div class="form-group pr-12px ml-16px">
+                  <label class="form-label" for="indentification"
+                    ><strong>*</strong> Số CCCD/CMND</label
+                  >
+                  <input
+                    id="indentification"
+                    class="form-input"
+                    type="text"
+                    name="indentification-label"
+                    required
+                    placeholder="Nhập số CCCD/CMND"
+                  />
+                </div>
+              </div>
+
+              <div class="flex mb-24px items-center">
+                <div class="form-group pr-12px mr-16px formm">
+                  <label class="form-label" for="bs-location"
+                    ><strong>*</strong> Địa chỉ</label
+                  >
+                  <select name="location" class="form-input" id="bs-location">
+                    <option>Tỉnh/Thành phố, Quận/Huyện, Phường/Xã</option>
+                  </select>
+                </div>
+
+                <div class="form-group pr-12px ml-16px formm">
+                  <label class="form-label"> </label>
+                  <input
+                    id="bs-location"
+                    class="form-input mt-19px"
+                    type="text"
+                    name="location"
+                    required
+                    placeholder="Tên đường, Tòa nhà, Số nhà"
+                  />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="form-group pr-12px mr-16px formm">
+                  <label class="form-label" for="major"
+                    ><strong>*</strong> Chuyên môn</label
+                  >
+                  <select name="major" class="form-input" id="major">
+                    <option>Nhập để chọn loại chuyên môn</option>
+                  </select>
+                </div>
+
+                <div class="form-group pr-12px ml-16px formm">
+                  <label class="form-label" for="edu-lvl"
+                    >Trình độ học vấn</label
+                  >
+                  <select name="location" class="form-input" id="edu-lvl">
+                    <option>Nhập để chọn trình độ học vấn</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="solid mt-19px" />
+
+          <div>
+            <p class="mb-24px">Thông tin thanh toán</p>
+            <div class="flex">
+              <div class="form-group pr-12px mr-16px formm">
+                <label class="form-label" for="bank"
+                  ><strong>*</strong> Ngân hàng</label
+                >
+                <select name="bank" class="form-input" id="bank">
+                  <option>Nhập để chọn ngân hàng</option>
+                </select>
+              </div>
+
+              <div class="form-group pr-12px ml-16px formm">
+                <label class="form-label" for="bank-id"
+                  ><strong>*</strong> Số thẻ</label
+                >
+                <input
+                  id="bank-id"
+                  class="form-input"
+                  type="text"
+                  name="bankid-label"
+                  required
+                  placeholder="Nhập số thẻ ngân hàng"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="submit-reset-btn fmt-48px border-0 border-top border-808080 border-ridge"
+          >
+            <button
+              class="btn-reset btn-white mr-16px"
+              type="reset"
+              value="reset"
+            >
+              Làm lại
+            </button>
+            <button class="btn-submit" type="submit" value="submit">
+              Tiếp theo
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
